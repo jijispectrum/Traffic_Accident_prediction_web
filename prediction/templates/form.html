@@ -1,0 +1,41 @@
+<form method="post">
+    {% csrf_token %}
+    
+    <label>Latitude:</label>
+    <input type="text" name="latitude" required><br>
+
+    <label>Longitude:</label>
+    <input type="text" name="longitude" required><br>
+
+    <label>Number of Vehicles Involved:</label>
+    <input type="number" name="no_of_vehicles" required><br>
+
+    <h4>Severity</h4>
+    <label>Fatal (0/1):</label>
+    <input type="number" name="severity_fatal" required><br>
+
+    <label>Grievous Injury (0/1):</label>
+    <input type="number" name="severity_grievous" required><br>
+
+    <h4>Road Type</h4>
+    <label>National Highway (0/1):</label>
+    <input type="number" name="road_type_nh" required><br>
+
+    <label>Residential Street (0/1):</label>
+    <input type="number" name="road_type_residential" required><br>
+
+    <h4>Weather Condition</h4>
+    <label>Clear (0/1):</label>
+    <input type="number" name="weather_clear" required><br>
+
+    <label>Cloudy (0/1):</label>
+    <input type="number" name="weather_cloudy" required><br>
+
+    <label>Heavy Rain (0/1):</label>
+    <input type="number" name="weather_heavy_rain" required><br>
+
+    <label>Light Rain (0/1):</label>
+    <input type="number" name="weather_light_rain" required><br>
+
+    <button type="submit">Predict Hotspot</button>
+</form>
